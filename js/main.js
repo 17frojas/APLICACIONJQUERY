@@ -75,9 +75,9 @@ function MoveBomb(nro){
                 $(this).fadeOut(1000);
                 
                 if ( $(this).attr("data-colision") == 0 ){
-                    explosion= document.getElementById("explosion");
-                    explosion.currentTime = 0;
-                    explosion.play();
+                    cuac= document.getElementById("cuac");
+                    cuac.currentTime = 0;
+                    cuac.play();
                     puntaje += 10;
                     $("#visor").html(puntaje);
                     $(this).attr("data-colision", 1);
